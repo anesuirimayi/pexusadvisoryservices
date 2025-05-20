@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional consultancy for modern businesses – Pexus Advisory Services Ltd, Zambia." />
+  <title>Pexus Advisory | Business Growth Experts</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark: '#0B0B0B',
+            grey: '#6B7280',
+            gold: '#D4AF37',
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Roboto', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+
+html {
+  scroll-behavior: smooth;
+}
+
+</style>
+
+</head>
+<body class="bg-white text-dark font-body">
+
+<!-- Updated Navigation -->
+<nav class="bg-white shadow-sm sticky top-0 z-50 font-[Inter]">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Logo & Brand -->
+    <div class="flex items-center space-x-3">
+      <img src="images/logo.jpg" alt="Pexus Logo" class="h-11 w-11 rounded-full object-cover ring-2 ring-gold">
+      <span class="text-xl font-semibold tracking-wide text-gold">Pexus Advisory Services Ltd</span>
+    </div>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-8 text-sm font-medium text-gray-800">
+      <li><a href="#mission" class="hover:text-gold transition">Our Mission</a></li>
+      <li><a href="#services" class="hover:text-gold transition">Services</a></li>
+      <li><a href="#contact" class="hover:text-gold transition">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Toggle -->
+    <div class="md:hidden">
+      <button id="mobile-menu-toggle" class="text-gray-800 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-6 pt-4 pb-16 bg-black/80 text-gold absolute w-full top-full left-0 backdrop-blur-lg font-medium">
+    <a href="#mission" class="block py-3 border-b border-gold/20 hover:text-white transition">Our Mission</a>
+    <a href="#services" class="block py-3 border-b border-gold/20 hover:text-white transition">Services</a>
+    <a href="#contact" class="block py-3 hover:text-white transition">Contact</a>
+  </div>
+</nav>
+
+<!-- Updated Hero Section -->
+<section class="relative bg-gray-900 text-white py-40 overflow-hidden">
+  <!-- Background Image Overlay -->
+  <div class="absolute inset-0 bg-[url('images/students2.webp')] bg-cover bg-center opacity-80 mix-blend-overlay"></div>
+
+  <!-- Hero Content -->
+  <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+    <h1 class="text-4xl md:text-5xl font-[Playfair Display] font-bold leading-tight mb-6 text-gold">
+  You dream it, we make it happen.
+</h1>
+    <p class="text-lg md:text-xl font-[Inter] max-w-3xl mx-auto">
+      Pexus Advisory Services Ltd is a Zambian-based management consultancy committed to delivering tailored business solutions for startups, entrepreneurs, investors, and professionals. From launching a business to relocating or expanding, Pexus ensures a smooth, compliant, and growth-oriented journey.
+    </p>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section id="about" class="bg-gradient-to-b from-white to-gray-100 py-20 px-6">
+  <div class="max-w-6xl mx-auto text-gray-800">
+    <!-- Heading -->
+    <h2 class="text-4xl font-bold text-center text-yellow-500 mb-16">About Us</h2>
+
+    <!-- Company Overview Card -->
+    <div class="bg-white shadow-xl rounded-2xl p-10 mb-16 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <img src="https://img.icons8.com/ios-filled/100/briefcase.png" alt="Company Icon" class="w-20 h-20 mb-4">
+        <h3 class="text-2xl font-bold mb-4 text-black">Company Overview</h3>
+        <p class="leading-relaxed mb-4">
+          Pexus Advisory Services Ltd is a Zambian-based consultancy empowering individuals, entrepreneurs, and investors with customized solutions that simplify business processes, support growth, and ensure compliance.
+        </p>
+        <p class="leading-relaxed">
+          Whether you're launching a startup, relocating for school or work, or investing in Zambia, Pexus is your trusted partner from start to success.
+        </p>
+      </div>
+      <div class="bg-yellow-100 p-6 rounded-xl">
+        <ul class="space-y-3 text-sm">
+          <li><strong>📛 Company Name:</strong> Pexus Advisory Services Ltd</li>
+          <li><strong>🏛️ Legal Structure:</strong> Private Limited Company (Ltd)</li>
+          <li><strong>📅 Founded:</strong> 2025</li>
+          <li><strong>📍 Headquarters:</strong> Vubu Road, Emmasdale, Lusaka, Zambia</li>
+          <li><strong>💬 Tagline:</strong> “You dream it, we make it happen.”</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Mission and Vision -->
+    <div id="mission" class="grid md:grid-cols-2 gap-12 mb-16">
+      <div class="bg-white shadow-md p-8 rounded-xl text-center">
+        <img src="https://img.icons8.com/ios-filled/50/target.png" class="mx-auto mb-4" alt="Mission Icon" />
+        <h3 class="text-xl font-semibold mb-2 text-black">Our Mission</h3>
+        <p class="text-gray-700">
+          To deliver comprehensive, client-focused advisory services that turn ideas into impactful realities.
+        </p>
+      </div>
+      <div class="bg-white shadow-md p-8 rounded-xl text-center">
+        <img src="https://img.icons8.com/ios-filled/50/binoculars.png" class="mx-auto mb-4" alt="Vision Icon" />
+        <h3 class="text-xl font-semibold mb-2 text-black">Our Vision</h3>
+        <p class="text-gray-700">
+          To be Zambia’s most reliable and innovative consultancy firm, enabling clients to achieve their goals with confidence and clarity.
+        </p>
+      </div>
+    </div>
+
+    <!-- Core Values -->
+    <div class="text-center max-w-4xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-6 text-black">Our Core Values</h3>
+      <div class="grid md:grid-cols-2 gap-8 text-left">
+        <div class="flex items-start space-x-4">
+          <img src="https://img.icons8.com/ios-filled/40/lock-2.png" alt="Integrity Icon" />
+          <p><strong>Integrity:</strong> We uphold transparency and honesty in all our services.</p>
+        </div>
+        <div class="flex items-start space-x-4">
+          <img src="https://img.icons8.com/ios-filled/40/rocket.png" alt="Efficiency Icon" />
+          <p><strong>Efficiency:</strong> We simplify complex processes for smooth client experiences.</p>
+        </div>
+        <div class="flex items-start space-x-4">
+          <img src="https://img.icons8.com/ios-filled/40/idea.png" alt="Innovation Icon" />
+          <p><strong>Innovation:</strong> We use modern tools and insights to deliver smart solutions.</p>
+        </div>
+        <div class="flex items-start space-x-4">
+          <img src="https://img.icons8.com/ios-filled/40/handshake.png" alt="Client Focus Icon" />
+          <p><strong>Client Focus:</strong> Your goals are our priority.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="services" class="bg-gray-100 py-20 px-6">
+  <div class="max-w-7xl mx-auto text-center mb-16">
+    <h2 class="text-4xl font-bold text-gold mb-4">Our Services</h2>
+    <p class="text-lg text-gray-700 max-w-2xl mx-auto">We offer a wide range of specialized services to support your journey — whether you're starting a business, relocating, investing, or studying in Zambia.</p>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+    
+    <!-- Service Card -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+      <img src="images/regis.jpg" alt="Business Services" class="w-full h-52 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-black mb-3">Business & Tax Services</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-2 text-left">
+          <li>Register your business with PACRA</li>
+          <li>Get your TPIN and tax services</li>
+          <li>Advice on business rules and requirements</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Service Card -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+      <img src="images/visa.jpg" alt="Visa Services" class="w-full h-52 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-black mb-3">Visa & Immigration Support</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-2 text-left">
+          <li>Help with Zambia visa applications</li>
+          <li>We process study and work permits</li>
+          <li>Permit extensions and changes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Service Card -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+      <img src="images/education.jpg" alt="Education Services" class="w-full h-52 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-black mb-3">Educational Support Services</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-2 text-left">
+          <li>Help with applying to Zambian universities</li>
+          <li>Secure admission letters</li>
+          <li>Find student accommodation</li>
+          <li>Support when settling in Zambia</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Service Card -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+      <img src="images/zam.png" alt="Investor Support" class="w-full h-52 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-black mb-3">Investor & Business Setup</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-2 text-left">
+          <li>Register with Zambia Investment Agency (ZIA)</li>
+          <li>Help foreign investors start businesses</li>
+          <li>Support with legal & gov requirements</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Service Card -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+      <img src="images/advice.jpg" alt="Business Advice" class="w-full h-52 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-black mb-3">Market & Business Advice</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-2 text-left">
+          <li>Research on your industry or idea</li>
+          <li>Advice on starting & growing your business</li>
+          <li>Financial guidance for small businesses</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Service Card -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+      <img src="images/web.jpg" alt="Website Services" class="w-full h-52 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-black mb-3">Website Services</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-2 text-left">
+          <li>Build simple, professional websites</li>
+          <li>Website management & updates</li>
+          <li>Customized business emails</li>
+          <li>Social media management</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<footer id="contact" class="bg-gray-900 text-gray-200 py-12 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+    
+    <!-- Logo & Tagline -->
+    <div>
+      <h2 class="text-2xl font-bold text-gold mb-2">Pexus</h2>
+      <p class="text-sm leading-relaxed">
+        “You dream it, we make it happen.”<br>
+        Your trusted partner from start to success.
+      </p>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3 text-gold">Contact Info</h3>
+      <ul class="space-y-2 text-sm">
+        <li class="flex items-center gap-2"><i class="fas fa-phone text-gold"></i> WhatsApp: +260951646169</li>
+        <li class="flex items-center gap-2"><i class="fas fa-phone-alt text-gold"></i> Calls: +260979666922</li>
+        <li class="flex items-center gap-2"><i class="fas fa-envelope text-gold"></i> pexusadvisoryservices@gmail.com</li>
+        <li class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-gold"></i> Vubu Road, Emmasdale, Lusaka</li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3 text-gold">Social Media</h3>
+      <ul class="space-y-2 text-sm">
+        <li class="flex items-center gap-2"><i class="fab fa-tiktok text-gold"></i> @pexusadvisoryservices</li>
+        <li class="flex items-center gap-2"><i class="fab fa-facebook text-gold"></i> @PexusAdvisory</li>
+      </ul>
+    </div>
+
+    <!-- Shareholders -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3 text-gold">Shareholders</h3>
+      <ul class="space-y-2 text-sm">
+        <li><strong>Nigel Sauramba</strong><br><i class="fas fa-phone text-gold"></i> +260774238526</li>
+        <li><strong>Simon Tadiwanashe Mashinge</strong><br><i class="fas fa-phone text-gold"></i> +260979666922</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="mt-10 border-t border-gray-700 pt-6 text-center text-sm relative">
+    <p>&copy; 2025 Pexus Advisory Services Ltd. All rights reserved.</p>
+    <!-- Scroll to Top Button -->
+<a href="#top" id="backToTop" class="fixed bottom-6 right-6 bg-gold text-white rounded-full p-3 shadow-lg z-50 hidden transition-opacity duration-300">
+  <i class="fas fa-arrow-up text-xl"></i>
+</a>
+
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Scripts -->
+  <script>
+    const toggleBtn = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+
+<script>
+  const backToTopBtn = document.getElementById('backToTop');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.remove('hidden');
+      backToTopBtn.classList.add('opacity-100');
+    } else {
+      backToTopBtn.classList.add('hidden');
+      backToTopBtn.classList.remove('opacity-100');
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
